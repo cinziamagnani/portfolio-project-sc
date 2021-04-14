@@ -1,13 +1,53 @@
+:root {
+    --heading-font-family: "playfair display", serif;
+    --default-font-family: poppins, sans-serif;
+}
+    body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
 h1 {
-    font-family: "playfair display", serif;
+    font-family: var(--heading-font-family);
+    font-size: 96px;
 }
 
 h2 {
-    font-family: poppins, sans-serif;
-    font-weight: 700;
+    font-family: var(--default-font-family);
+    font-weight: 500;
+    font-size: 18px;
+    margin: 30px auto 70px auto;
 }
 
 p {
-    font-family: poppins, sans-serif;
+    font-family: var(--default-font-family);
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, rgba(0,0,0, 0.9), rgba(0,0,0,0.7)),
+      url("/img/IMG_5334.png");
+      background-size: 100% 100%;
+      text-align: center;
+      padding: 160px 0;
+}
+
+.hero p {
     font-weight: 500;
+    font-size: 36px; 
+    padding: 20px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-branding {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 15px 25px;
+    border-radius: 25px;
+    font-size: 18px;
+    line-height: 27px;
 }
